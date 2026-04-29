@@ -43,3 +43,67 @@ if (contactForm) {
     event.preventDefault();
   });
 }
+
+// --- Product Page Interactions ---
+
+// Gallery Switcher
+const mainImg = document.getElementById("main-product-img");
+const thumbBtns = document.querySelectorAll(".thumb-btn");
+
+if (mainImg && thumbBtns.length > 0) {
+  thumbBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      // Update main image source
+      const newSrc = btn.getAttribute("data-img");
+      mainImg.src = newSrc;
+
+      // Update active state
+      thumbBtns.forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+    });
+  });
+}
+
+// Quantity Selector
+const qtyInput = document.getElementById("product-qty");
+const qtyPlus = document.getElementById("qty-plus");
+const qtyMinus = document.getElementById("qty-minus");
+
+if (qtyInput && qtyPlus && qtyMinus) {
+  qtyPlus.addEventListener("click", () => {
+    qtyInput.value = parseInt(qtyInput.value) + 1;
+  });
+
+  qtyMinus.addEventListener("click", () => {
+    const currentVal = parseInt(qtyInput.value);
+    if (currentVal > 1) {
+      qtyInput.value = currentVal - 1;
+    }
+  });
+}
+
+// Tab Switching
+const tabTriggers = document.querySelectorAll(".tab-trigger");
+const tabContents = document.querySelectorAll(".tab-content");
+
+if (tabTriggers.length > 0) {
+  tabTriggers.forEach((trigger) => {
+    trigger.addEventListener("click", () => {
+      const targetTab = trigger.getAttribute("data-tab");
+
+      // Update active trigger
+      tabTriggers.forEach((t) => t.classList.remove("active"));
+      trigger.classList.add("active");
+
+      // Update visible content
+      tabContents.forEach((content) => {
+        if (content.id === targetTab) {
+          content.classList.remove("hidden");
+        } else {
+          content.classList.add("hidden");
+        }
+      });
+    });
+  });
+}
+
