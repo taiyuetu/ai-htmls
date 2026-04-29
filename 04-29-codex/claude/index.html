@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VÉRITÉ — Digital Experience Studio</title>
+  <meta name="description" content="Award-winning web design & digital experience agency crafting immersive digital worlds." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">VÉRITÉ</a>
+      <ul class="nav-links">
+        <li class="nav-item-has-submenu">
+          <a href="portfolio-archive.html">Portfolio</a>
+          <div class="nav-submenu nav-mega-menu">
+            <a href="portfolio-single.html" class="nav-mega-feature">
+              <div class="nav-mega-image"></div>
+              <div class="nav-mega-copy">
+                <span class="nav-mega-kicker">Featured Case</span>
+                <strong>Luminara Residences</strong>
+                <p>Luxury property case study with cinematic storytelling and higher-quality inquiry flow.</p>
+              </div>
+            </a>
+            <div class="nav-mega-columns">
+              <a href="portfolio-archive.html" class="nav-mega-link">
+                <span>Browse</span>
+                <strong>Portfolio Archive</strong>
+                <em>See the full work index across brand, web, product, and development.</em>
+              </a>
+              <a href="portfolio-single.html" class="nav-mega-link">
+                <span>Read</span>
+                <strong>Single Portfolio</strong>
+                <em>Open the detailed project page layout used for individual case studies.</em>
+              </a>
+              <a href="default-page.html" class="nav-mega-link">
+                <span>Template</span>
+                <strong>Default Page</strong>
+                <em>Reusable internal page with banner, sidebar, and long-form content area.</em>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li><a href="about-us.html">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#process">Process</a></li>
+      </ul>
+      <button class="nav-search-toggle" id="search-toggle" aria-label="Open search" type="button">
+        <span class="nav-search-icon"></span>
+      </button>
+      <a href="contact-us.html" class="nav-cta">Start a Project</a>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="header-search" id="header-search">
+    <div class="header-search-inner">
+      <form class="header-search-form">
+        <input id="header-search-input" class="header-search-input" type="search" placeholder="Search projects, pages, or articles" />
+        <button class="btn btn-primary header-search-submit" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="portfolio-archive.html" class="mobile-link">Portfolio</a></li>
+      <li>
+        <ul class="mobile-submenu-group">
+          <li class="mobile-submenu-label">Portfolio Menu</li>
+          <li><a href="portfolio-archive.html" class="mobile-sublink">Portfolio Archive</a></li>
+          <li><a href="portfolio-single.html" class="mobile-sublink">Single Portfolio</a></li>
+          <li><a href="default-page.html" class="mobile-sublink">Default Page</a></li>
+        </ul>
+      </li>
+      <li><a href="about-us.html" class="mobile-link">About</a></li>
+      <li><a href="#services" class="mobile-link">Services</a></li>
+      <li><a href="#process" class="mobile-link">Process</a></li>
+      <li><a href="contact-us.html" class="mobile-link">Start a Project</a></li>
+    </ul>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+
+    <!-- Slider track -->
+    <div class="hero-slides" id="hero-slides">
+
+      <!-- Slide 1 -->
+      <div class="hero-slide active">
+        <div class="hero-content">
+          <p class="hero-eyebrow reveal-up" data-delay="0">Digital Experience Studio — Est. 2018</p>
+          <h1 class="hero-headline reveal-up" data-delay="1">
+            We craft<br /><em>worlds</em><br />that convert.
+          </h1>
+          <p class="hero-sub reveal-up" data-delay="2">
+            Award-winning design & development for brands<br />that refuse to be ordinary.
+          </p>
+          <div class="hero-actions reveal-up" data-delay="3">
+            <a href="#work" class="btn btn-primary">View Our Work</a>
+            <a href="#contact" class="btn btn-ghost">Start a Project ↗</a>
+          </div>
+          <div class="hero-stats reveal-up" data-delay="4">
+            <div class="stat"><span class="stat-num">120+</span><span class="stat-label">Projects</span></div>
+            <div class="stat"><span class="stat-num">94%</span><span class="stat-label">Retention</span></div>
+            <div class="stat"><span class="stat-num">18</span><span class="stat-label">Awards</span></div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-mockup hero-mockup--browser">
+            <div class="mock-browser-bar">
+              <div class="mock-dot"></div><div class="mock-dot"></div><div class="mock-dot"></div>
+              <div class="mock-url">verite.studio/luminara</div>
+            </div>
+            <div class="mock-browser-screen">
+              <div class="mock-screen-content">
+                <div class="mock-hero-block"></div>
+                <div class="mock-nav-row">
+                  <div class="mock-nav-item w60"></div>
+                  <div class="mock-nav-item w80"></div>
+                  <div class="mock-nav-item w50"></div>
+                </div>
+                <div class="mock-grid-2">
+                  <div class="mock-card-tall"></div>
+                  <div class="mock-card-stack">
+                    <div class="mock-card-sm"></div>
+                    <div class="mock-card-sm"></div>
+                  </div>
+                </div>
+                <div class="mock-text-row">
+                  <div class="mock-line w90"></div>
+                  <div class="mock-line w70"></div>
+                  <div class="mock-line w50"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-float-card fc1">
+            <span class="fc-label">Design Score</span>
+            <span class="fc-val">98 / 100</span>
+          </div>
+          <div class="hero-float-card fc2">
+            <span class="fc-label">Awwwards SOTD</span>
+            <span class="fc-val">★ Selected</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="hero-slide">
+        <div class="hero-content">
+          <p class="hero-eyebrow">Branding & Identity</p>
+          <h1 class="hero-headline">
+            Identity that<br /><em>defines</em><br />the market.
+          </h1>
+          <p class="hero-sub">
+            Strategic brand systems that give companies<br />an unfair advantage from day one.
+          </p>
+          <div class="hero-actions">
+            <a href="#work" class="btn btn-primary">See Branding Work</a>
+            <a href="#contact" class="btn btn-ghost">Let's Talk ↗</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-mockup hero-mockup--brand">
+            <div class="brand-grid">
+              <div class="brand-logo-block">
+                <div class="brand-logo-mark"></div>
+                <div class="brand-wordmark"></div>
+              </div>
+              <div class="brand-palette">
+                <div class="palette-swatch s1"></div>
+                <div class="palette-swatch s2"></div>
+                <div class="palette-swatch s3"></div>
+                <div class="palette-swatch s4"></div>
+              </div>
+              <div class="brand-type-sample">
+                <div class="type-xl"></div>
+                <div class="type-md"></div>
+                <div class="type-sm"></div>
+              </div>
+              <div class="brand-mockup-card"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="hero-slide">
+        <div class="hero-content">
+          <p class="hero-eyebrow">Conversion & Growth</p>
+          <h1 class="hero-headline">
+            Design that<br /><em>sells</em><br />by design.
+          </h1>
+          <p class="hero-sub">
+            Every pixel engineered to delight users<br />and drive measurable business results.
+          </p>
+          <div class="hero-actions">
+            <a href="#services" class="btn btn-primary">Our Services</a>
+            <a href="#process" class="btn btn-ghost">Our Process ↗</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-mockup hero-mockup--metrics">
+            <div class="metrics-header">
+              <div class="metric-big"><span class="metric-num">+312%</span><span class="metric-desc">Conversion Rate</span></div>
+            </div>
+            <div class="metrics-chart">
+              <div class="chart-bar b1"></div>
+              <div class="chart-bar b2"></div>
+              <div class="chart-bar b3"></div>
+              <div class="chart-bar b4"></div>
+              <div class="chart-bar b5"></div>
+              <div class="chart-bar b6"></div>
+              <div class="chart-bar b7"></div>
+            </div>
+            <div class="metrics-row">
+              <div class="metric-sm"><div class="ms-val">98</div><div class="ms-lbl">Perf Score</div></div>
+              <div class="metric-sm"><div class="ms-val">4.9★</div><div class="ms-lbl">Client Avg</div></div>
+              <div class="metric-sm"><div class="ms-val">48h</div><div class="ms-lbl">Turnaround</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /hero-slides -->
+
+    <!-- Slide controls -->
+    <div class="hero-controls">
+      <button class="hero-prev" id="hero-prev" aria-label="Previous">←</button>
+      <div class="hero-dots" id="hero-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      <button class="hero-next" id="hero-next" aria-label="Next">→</button>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       MARQUEE
+  ═══════════════════════════════════════════ -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>Web Design</span><span class="dot-sep">·</span>
+      <span>UI/UX Design</span><span class="dot-sep">·</span>
+      <span>Branding</span><span class="dot-sep">·</span>
+      <span>Webflow Development</span><span class="dot-sep">·</span>
+      <span>Motion Design</span><span class="dot-sep">·</span>
+      <span>Conversion Optimization</span><span class="dot-sep">·</span>
+      <span>Digital Strategy</span><span class="dot-sep">·</span>
+      <span>Web Design</span><span class="dot-sep">·</span>
+      <span>UI/UX Design</span><span class="dot-sep">·</span>
+      <span>Branding</span><span class="dot-sep">·</span>
+      <span>Webflow Development</span><span class="dot-sep">·</span>
+      <span>Motion Design</span><span class="dot-sep">·</span>
+      <span>Conversion Optimization</span><span class="dot-sep">·</span>
+      <span>Digital Strategy</span><span class="dot-sep">·</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       FEATURED WORK
+  ═══════════════════════════════════════════ -->
+  <section class="work" id="work">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Featured Work</div>
+        <h2 class="section-title reveal-up">Selected <em>Projects</em></h2>
+        <a href="portfolio-archive.html" class="section-link">View All Work →</a>
+      </div>
+
+      <div class="work-grid">
+
+        <!-- Project 1 — Large -->
+        <article class="work-card work-card--large reveal-up" data-category="Web Design">
+          <div class="work-card-media">
+            <div class="work-media-placeholder wmp-1">
+              <div class="wmp-inner">
+                <div class="wmp-mock-nav"></div>
+                <div class="wmp-mock-hero"></div>
+                <div class="wmp-mock-row">
+                  <div class="wmp-block w1"></div>
+                  <div class="wmp-block w2"></div>
+                  <div class="wmp-block w1"></div>
+                </div>
+              </div>
+              <div class="wmp-overlay">
+                <span class="wmp-view-btn">View Project ↗</span>
+              </div>
+            </div>
+          </div>
+          <div class="work-card-info">
+            <div class="work-card-meta">
+              <span class="work-cat">Web Design</span>
+              <span class="work-year">2024</span>
+            </div>
+            <h3 class="work-title">Luminara — Luxury Property Platform</h3>
+            <p class="work-desc">End-to-end digital experience for an ultra-premium real estate brand.</p>
+            <a href="portfolio-single.html" class="work-link">Case Study →</a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="work-card reveal-up" data-category="Branding" data-delay="1">
+          <div class="work-card-media">
+            <div class="work-media-placeholder wmp-2">
+              <div class="wmp-inner wmp-brand-inner">
+                <div class="wmp-brand-logo"></div>
+                <div class="wmp-brand-colors">
+                  <div class="wmp-brand-c c1"></div>
+                  <div class="wmp-brand-c c2"></div>
+                  <div class="wmp-brand-c c3"></div>
+                </div>
+                <div class="wmp-brand-type"></div>
+              </div>
+              <div class="wmp-overlay">
+                <span class="wmp-view-btn">View Project ↗</span>
+              </div>
+            </div>
+          </div>
+          <div class="work-card-info">
+            <div class="work-card-meta">
+              <span class="work-cat">Branding</span>
+              <span class="work-year">2024</span>
+            </div>
+            <h3 class="work-title">Forêt — Sustainable Fashion</h3>
+            <p class="work-desc">Brand identity system for a radical eco-luxury label.</p>
+            <a href="portfolio-archive.html" class="work-link">Case Study →</a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="work-card reveal-up" data-category="UI/UX" data-delay="2">
+          <div class="work-card-media">
+            <div class="work-media-placeholder wmp-3">
+              <div class="wmp-inner wmp-app-inner">
+                <div class="wmp-app-bar"></div>
+                <div class="wmp-app-cards">
+                  <div class="wmp-app-card ac1"></div>
+                  <div class="wmp-app-card ac2"></div>
+                </div>
+                <div class="wmp-app-tabs">
+                  <div class="wmp-tab active-tab"></div>
+                  <div class="wmp-tab"></div>
+                  <div class="wmp-tab"></div>
+                  <div class="wmp-tab"></div>
+                </div>
+              </div>
+              <div class="wmp-overlay">
+                <span class="wmp-view-btn">View Project ↗</span>
+              </div>
+            </div>
+          </div>
+          <div class="work-card-info">
+            <div class="work-card-meta">
+              <span class="work-cat">UI/UX Design</span>
+              <span class="work-year">2023</span>
+            </div>
+            <h3 class="work-title">Apex — FinTech Dashboard</h3>
+            <p class="work-desc">Complex data made beautifully simple for 50k+ daily users.</p>
+            <a href="portfolio-archive.html" class="work-link">Case Study →</a>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="work-card reveal-up" data-category="Web Design" data-delay="1">
+          <div class="work-card-media">
+            <div class="work-media-placeholder wmp-4">
+              <div class="wmp-inner">
+                <div class="wmp-cinematic-hero"></div>
+                <div class="wmp-text-block">
+                  <div class="wmp-line l1"></div>
+                  <div class="wmp-line l2"></div>
+                </div>
+              </div>
+              <div class="wmp-overlay">
+                <span class="wmp-view-btn">View Project ↗</span>
+              </div>
+            </div>
+          </div>
+          <div class="work-card-info">
+            <div class="work-card-meta">
+              <span class="work-cat">Web Design</span>
+              <span class="work-year">2023</span>
+            </div>
+            <h3 class="work-title">Nocturne — Hospitality Brand</h3>
+            <p class="work-desc">Immersive digital hotel experience with cinematic storytelling.</p>
+            <a href="portfolio-archive.html" class="work-link">Case Study →</a>
+          </div>
+        </article>
+
+        <!-- Project 5 — Wide -->
+        <article class="work-card work-card--wide reveal-up" data-category="Development" data-delay="2">
+          <div class="work-card-media">
+            <div class="work-media-placeholder wmp-5">
+              <div class="wmp-inner wmp-dev-inner">
+                <div class="wmp-code-window">
+                  <div class="wmp-code-bar"><div class="wmp-dot"></div><div class="wmp-dot"></div><div class="wmp-dot"></div></div>
+                  <div class="wmp-code-lines">
+                    <div class="wmp-code-line cl1"></div>
+                    <div class="wmp-code-line cl2"></div>
+                    <div class="wmp-code-line cl3"></div>
+                    <div class="wmp-code-line cl1"></div>
+                    <div class="wmp-code-line cl4"></div>
+                  </div>
+                </div>
+                <div class="wmp-perf-card">
+                  <div class="perf-score">99</div>
+                  <div class="perf-label">Lighthouse</div>
+                </div>
+              </div>
+              <div class="wmp-overlay">
+                <span class="wmp-view-btn">View Project ↗</span>
+              </div>
+            </div>
+          </div>
+          <div class="work-card-info">
+            <div class="work-card-meta">
+              <span class="work-cat">Development</span>
+              <span class="work-year">2024</span>
+            </div>
+            <h3 class="work-title">Orbit — SaaS Web App</h3>
+            <p class="work-desc">High-performance React application with 99 Lighthouse score, serving 200k+ users globally.</p>
+            <a href="portfolio-archive.html" class="work-link">Case Study →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════════ -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-col reveal-left">
+          <div class="about-image-frame">
+            <div class="about-img-placeholder">
+              <div class="about-img-inner">
+                <div class="studio-sketch studio-desk"></div>
+                <div class="studio-sketch studio-monitor"></div>
+                <div class="studio-sketch studio-plant"></div>
+                <div class="studio-ambient"></div>
+              </div>
+            </div>
+            <div class="about-badge">
+              <span class="ab-num">7</span>
+              <span class="ab-text">Years of<br/>Excellence</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text-col reveal-right">
+          <div class="section-label">About Vérité</div>
+          <h2 class="section-title">We don't do <em>average.</em></h2>
+          <p class="about-body">
+            Vérité is a digital experience studio obsessed with craft, strategy, and the space where great design meets measurable outcomes. Founded in 2018, we've partnered with startups, scale-ups, and Fortune 500s to create digital products that don't just look beautiful — they perform.
+          </p>
+          <p class="about-body">
+            Our team of designers, developers, and strategists operate at the intersection of aesthetics and analytics. Every decision is deliberate. Every pixel has purpose.
+          </p>
+          <div class="about-values">
+            <div class="value-item">
+              <span class="value-icon">◈</span>
+              <div>
+                <strong>Craft-First</strong>
+                <p>Obsessive attention to detail in every deliverable.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <span class="value-icon">◎</span>
+              <div>
+                <strong>Strategy-Led</strong>
+                <p>Design grounded in research, data, and business goals.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <span class="value-icon">◉</span>
+              <div>
+                <strong>Results-Driven</strong>
+                <p>We measure success in conversions, not compliments.</p>
+              </div>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary">Meet the Team →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SERVICES
+  ═══════════════════════════════════════════ -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">What We Do</div>
+        <h2 class="section-title reveal-up">Full-spectrum <em>design</em></h2>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card reveal-up" data-delay="0">
+          <div class="service-visual sv-1">
+            <div class="sv-inner">
+              <div class="sv-icon-mock">
+                <div class="sv-wireframe"></div>
+                <div class="sv-cursor"></div>
+              </div>
+            </div>
+          </div>
+          <div class="service-content">
+            <span class="service-num">01</span>
+            <h3>Web Design</h3>
+            <p>Visually striking, conversion-optimized websites that establish authority and drive action.</p>
+            <a href="#" class="service-link">Explore →</a>
+          </div>
+        </div>
+
+        <div class="service-card reveal-up" data-delay="1">
+          <div class="service-visual sv-2">
+            <div class="sv-inner">
+              <div class="sv-icon-mock">
+                <div class="sv-flow">
+                  <div class="sv-flow-node fn1"></div>
+                  <div class="sv-flow-arrow"></div>
+                  <div class="sv-flow-node fn2"></div>
+                  <div class="sv-flow-arrow"></div>
+                  <div class="sv-flow-node fn3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="service-content">
+            <span class="service-num">02</span>
+            <h3>UI/UX Design</h3>
+            <p>Research-backed interfaces that users love and that reduce friction at every touchpoint.</p>
+            <a href="#" class="service-link">Explore →</a>
+          </div>
+        </div>
+
+        <div class="service-card reveal-up" data-delay="2">
+          <div class="service-visual sv-3">
+            <div class="sv-inner">
+              <div class="sv-icon-mock">
+                <div class="sv-brand-mark"></div>
+                <div class="sv-brand-dots">
+                  <span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="service-content">
+            <span class="service-num">03</span>
+            <h3>Branding</h3>
+            <p>Bold identity systems — logo, color, typography, voice — that carve out market positioning.</p>
+            <a href="#" class="service-link">Explore →</a>
+          </div>
+        </div>
+
+        <div class="service-card reveal-up" data-delay="0">
+          <div class="service-visual sv-4">
+            <div class="sv-inner">
+              <div class="sv-icon-mock sv-code-mock">
+                <div class="sv-code-line scl1"></div>
+                <div class="sv-code-line scl2"></div>
+                <div class="sv-code-line scl3"></div>
+                <div class="sv-code-cursor"></div>
+              </div>
+            </div>
+          </div>
+          <div class="service-content">
+            <span class="service-num">04</span>
+            <h3>Development</h3>
+            <p>Clean, performant code. Webflow, React, Next.js — built for speed, scale, and SEO.</p>
+            <a href="#" class="service-link">Explore →</a>
+          </div>
+        </div>
+
+        <div class="service-card reveal-up" data-delay="1">
+          <div class="service-visual sv-5">
+            <div class="sv-inner">
+              <div class="sv-icon-mock sv-chart-mock">
+                <div class="sv-chart-line"></div>
+                <div class="sv-chart-dots">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="service-content">
+            <span class="service-num">05</span>
+            <h3>Conversion Optimization</h3>
+            <p>A/B testing, funnel analysis, and UX optimization to turn visitors into customers.</p>
+            <a href="#" class="service-link">Explore →</a>
+          </div>
+        </div>
+
+        <div class="service-card reveal-up" data-delay="2">
+          <div class="service-visual sv-6">
+            <div class="sv-inner">
+              <div class="sv-icon-mock sv-digital-mock">
+                <div class="sv-megaphone"></div>
+                <div class="sv-waves">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="service-content">
+            <span class="service-num">06</span>
+            <h3>Digital Marketing</h3>
+            <p>Integrated campaigns — SEO, paid, content — anchored by design that converts.</p>
+            <a href="#" class="service-link">Explore →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CASE STUDY PREVIEW
+  ═══════════════════════════════════════════ -->
+  <section class="case-studies" id="case-studies">
+    <div class="container">
+      <div class="section-label">Deep Dives</div>
+      <h2 class="section-title reveal-up">Case <em>Studies</em></h2>
+
+      <div class="cs-list">
+
+        <!-- CS 1 -->
+        <div class="cs-item reveal-up">
+          <div class="cs-visual">
+            <div class="cs-img-placeholder csip-1">
+              <div class="csip-content">
+                <div class="csip-main-block"></div>
+                <div class="csip-overlay-text">
+                  <div class="csip-line cl1"></div>
+                  <div class="csip-line cl2"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cs-info">
+            <span class="cs-tag">E-Commerce · Web Design</span>
+            <h3 class="cs-title">How we grew Maison's revenue by 312% through design</h3>
+            <div class="cs-problem">
+              <strong>The Problem:</strong>
+              <p>A luxury e-commerce brand with premium products but a website that felt discount. Their cart abandonment was 91%.</p>
+            </div>
+            <div class="cs-solution">
+              <strong>Our Solution:</strong>
+              <p>Complete redesign centered on immersive product storytelling, trust signals, and a checkout flow tested across 10,000 sessions.</p>
+            </div>
+            <div class="cs-results">
+              <div class="cs-result-item"><span>+312%</span> Revenue</div>
+              <div class="cs-result-item"><span>−67%</span> Bounce Rate</div>
+              <div class="cs-result-item"><span>4.2×</span> ROAS</div>
+            </div>
+            <a href="#" class="btn btn-outline">Read Case Study →</a>
+          </div>
+        </div>
+
+        <!-- CS 2 -->
+        <div class="cs-item cs-item--reverse reveal-up">
+          <div class="cs-visual">
+            <div class="cs-img-placeholder csip-2">
+              <div class="csip-content">
+                <div class="csip-app-frame">
+                  <div class="csip-app-header"></div>
+                  <div class="csip-app-body">
+                    <div class="csip-app-card"></div>
+                    <div class="csip-app-card"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cs-info">
+            <span class="cs-tag">SaaS · UI/UX · Development</span>
+            <h3 class="cs-title">Redesigning Apex's dashboard for 50k daily users</h3>
+            <div class="cs-problem">
+              <strong>The Problem:</strong>
+              <p>A fintech startup with powerful features buried under a confusing interface. Churn was high; feature adoption was low.</p>
+            </div>
+            <div class="cs-solution">
+              <strong>Our Solution:</strong>
+              <p>A data-dense yet visually clean dashboard redesign, informed by 60+ user interviews and 3 rounds of prototype testing.</p>
+            </div>
+            <div class="cs-results">
+              <div class="cs-result-item"><span>−43%</span> Churn Rate</div>
+              <div class="cs-result-item"><span>+180%</span> Feature Adoption</div>
+              <div class="cs-result-item"><span>4.8★</span> App Store</div>
+            </div>
+            <a href="#" class="btn btn-outline">Read Case Study →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PROCESS
+  ═══════════════════════════════════════════ -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="section-header centered">
+        <div class="section-label">How We Work</div>
+        <h2 class="section-title reveal-up">Our <em>Process</em></h2>
+        <p class="section-sub">A proven framework. Zero shortcuts. Every time.</p>
+      </div>
+      <div class="process-steps">
+
+        <div class="process-step reveal-up" data-delay="0">
+          <div class="ps-visual">
+            <div class="ps-icon-frame pif-1">
+              <div class="ps-icon-inner">
+                <div class="ps-icon-shape pis-discover"></div>
+              </div>
+            </div>
+            <div class="ps-connector"></div>
+          </div>
+          <span class="ps-num">01</span>
+          <h3>Discover</h3>
+          <p>Deep-dive research: business goals, user psychology, competitive landscape, and brand truth.</p>
+        </div>
+
+        <div class="process-step reveal-up" data-delay="1">
+          <div class="ps-visual">
+            <div class="ps-icon-frame pif-2">
+              <div class="ps-icon-inner">
+                <div class="ps-icon-shape pis-strategy"></div>
+              </div>
+            </div>
+            <div class="ps-connector"></div>
+          </div>
+          <span class="ps-num">02</span>
+          <h3>Strategize</h3>
+          <p>Define the creative direction, information architecture, and conversion roadmap before a pixel is placed.</p>
+        </div>
+
+        <div class="process-step reveal-up" data-delay="2">
+          <div class="ps-visual">
+            <div class="ps-icon-frame pif-3">
+              <div class="ps-icon-inner">
+                <div class="ps-icon-shape pis-design"></div>
+              </div>
+            </div>
+            <div class="ps-connector"></div>
+          </div>
+          <span class="ps-num">03</span>
+          <h3>Design</h3>
+          <p>High-fidelity designs crafted to perfection — visual systems, interactions, and responsive layouts.</p>
+        </div>
+
+        <div class="process-step reveal-up" data-delay="3">
+          <div class="ps-visual">
+            <div class="ps-icon-frame pif-4">
+              <div class="ps-icon-inner">
+                <div class="ps-icon-shape pis-build"></div>
+              </div>
+            </div>
+            <div class="ps-connector"></div>
+          </div>
+          <span class="ps-num">04</span>
+          <h3>Build</h3>
+          <p>Pixel-perfect development with performance, accessibility, and SEO baked in from line one.</p>
+        </div>
+
+        <div class="process-step reveal-up" data-delay="4">
+          <div class="ps-visual">
+            <div class="ps-icon-frame pif-5">
+              <div class="ps-icon-inner">
+                <div class="ps-icon-shape pis-launch"></div>
+              </div>
+            </div>
+          </div>
+          <span class="ps-num">05</span>
+          <h3>Launch & Grow</h3>
+          <p>Rigorous QA, launch support, and ongoing optimization to keep performance compounding.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       TESTIMONIALS
+  ═══════════════════════════════════════════ -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header centered">
+        <div class="section-label">Client Stories</div>
+        <h2 class="section-title reveal-up">What they <em>say</em></h2>
+      </div>
+
+      <div class="testi-grid">
+
+        <div class="testi-card reveal-up" data-delay="0">
+          <div class="testi-quote-mark">"</div>
+          <p class="testi-text">Vérité didn't just redesign our website — they redesigned how our company is perceived. Revenue from organic has tripled since launch.</p>
+          <div class="testi-author">
+            <div class="testi-avatar ta1"></div>
+            <div>
+              <strong>Sarah Chen</strong>
+              <span>CEO, Maison Collective</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card reveal-up" data-delay="1">
+          <div class="testi-quote-mark">"</div>
+          <p class="testi-text">The team's attention to craft is unlike anything I've experienced. Every micro-interaction was considered. The result? Our best-performing quarter ever.</p>
+          <div class="testi-author">
+            <div class="testi-avatar ta2"></div>
+            <div>
+              <strong>Marcus Webb</strong>
+              <span>CPO, Apex Financial</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card reveal-up" data-delay="2">
+          <div class="testi-quote-mark">"</div>
+          <p class="testi-text">They understood our brand better than we did. The rebrand Vérité delivered became our most powerful sales tool. Absolute excellence.</p>
+          <div class="testi-author">
+            <div class="testi-avatar ta3"></div>
+            <div>
+              <strong>Amélie Rousseau</strong>
+              <span>Creative Director, Forêt</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Client Logos -->
+      <div class="clients-row reveal-up">
+        <div class="client-logo cl-1"><div class="logo-placeholder lp1"></div></div>
+        <div class="client-logo cl-2"><div class="logo-placeholder lp2"></div></div>
+        <div class="client-logo cl-3"><div class="logo-placeholder lp3"></div></div>
+        <div class="client-logo cl-4"><div class="logo-placeholder lp4"></div></div>
+        <div class="client-logo cl-5"><div class="logo-placeholder lp5"></div></div>
+        <div class="client-logo cl-6"><div class="logo-placeholder lp6"></div></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CTA
+  ═══════════════════════════════════════════ -->
+  <section class="cta-section" id="contact">
+    <div class="cta-bg-visual">
+      <div class="cta-gradient-orb orb1"></div>
+      <div class="cta-gradient-orb orb2"></div>
+      <div class="cta-noise"></div>
+    </div>
+    <div class="container">
+      <div class="cta-inner reveal-up">
+        <div class="cta-label">Ready to Begin?</div>
+        <h2 class="cta-headline">Let's build something<br /><em>extraordinary.</em></h2>
+        <p class="cta-sub">We take on a limited number of projects each quarter to ensure every client gets our full creative power.</p>
+        <div class="cta-actions">
+          <a href="mailto:hello@verite.studio" class="btn btn-white">Start a Project</a>
+          <a href="#" class="btn btn-ghost-white">View Pricing →</a>
+        </div>
+        <div class="cta-trust">
+          <span>✓ 48h response</span>
+          <span>✓ Fixed-price quotes</span>
+          <span>✓ No BS contracts</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-texture"></div>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">VÉRITÉ</div>
+          <p class="footer-tagline">Digital Experience Studio.<br />Crafted with obsession.</p>
+          <div class="footer-socials">
+            <a href="#" class="fsocial">Tw</a>
+            <a href="#" class="fsocial">In</a>
+            <a href="#" class="fsocial">Dr</a>
+            <a href="#" class="fsocial">Aw</a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h4>Studio</h4>
+          <ul>
+            <li><a href="about-us.html">About</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">UI/UX Design</a></li>
+            <li><a href="#">Branding</a></li>
+            <li><a href="#">Development</a></li>
+            <li><a href="#">Digital Marketing</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>Work</h4>
+          <ul>
+            <li><a href="portfolio-archive.html">Portfolio</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Awards</a></li>
+            <li><a href="news-list.html">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-col">
+          <h4>Say Hello</h4>
+          <a href="mailto:hello@verite.studio" class="footer-email">hello@verite.studio</a>
+          <p class="footer-location">Paris · New York · Remote</p>
+          <a href="contact-us.html" class="btn btn-outline footer-cta-btn">Start a Project</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2024 Vérité Studio. All rights reserved.</span>
+        <div class="footer-legal">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </div>
+        <span class="footer-craft">Made with obsession ◈</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
